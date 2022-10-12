@@ -8,10 +8,10 @@ scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['ipAddress:9090']
+      - targets: ['ip_address:9090']
   - job_name: 'node-exporter'
     static_configs:
-      - targets: ['ipAddress:9100']
+      - targets: ['ip_address:9100']
   - job_name: 'cadvisro'
     static_configs:
-      - targets: ['ipAddress:8080']
+      - targets: ['ip_address:8080']
